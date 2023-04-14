@@ -1,0 +1,242 @@
+/* Set the font family for the entire page */
+@font-face {
+    font-family: Bloodborne;
+    src: url(./fonts/CinzelDecorative-Bold.ttf);
+}
+
+body {
+    font-family: Bloodborne, Arial, sans-serif;
+    background-color: #333333; /* dark grey background color */
+    text-shadow: black;
+  }
+  
+  /* Style the header element */
+  header {
+    background-color: #333333;
+    color: rgb(116, 44, 44);
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  footer {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(116, 44, 44);
+    font-weight: bold;
+  }
+  
+  /* Style the image */
+  img.center {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    filter: grayscale(30%);
+    border: 4px solid black;
+    border-radius: 15px;
+  }
+
+  @font-face {
+    font-family: Bloodborne;
+    src: url(./fonts/CinzelDecorative-Bold.ttf);
+  }
+  
+  body {
+    font-family: Bloodborne, Arial, sans-serif;
+    background-color: #333333; /* dark grey background color */
+    text-shadow: black;
+  }
+  
+  /* Style the header element */
+  header {
+    background-color: #333333;
+    color: rgb(116, 44, 44);
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  footer {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(116, 44, 44);
+    font-weight: bold;
+  }
+
+  /* Getting the border to remain the same size within the page while the image expands */
+  .Lady {
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
+  /* Style the image */
+  img.center {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 4px solid black;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* This is the hover effect over the image */
+  .Lady {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .Lady:hover img.center {
+    transform: scale(1.2);
+    border-width: 2px;    /* trying to keep the border from moving during hover */
+  }
+  
+  .Lady:hover .image-text {
+    opacity: 1;
+  } 
+
+
+  /* Style for the table */
+  table {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(107, 78, 78);
+    border: 2px solid;
+    width: 75%;
+    max-width: 800px;
+    text-align: center;
+    margin: auto; 
+}
+
+th {
+    border: #333333;
+    background-color: rgb(117, 114, 114);
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgb(116, 44, 44);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Displaying text over an image */
+.container {
+  position: relative;
+  text-align: center;
+  color: #333333;
+  text-shadow:2px 2px 5px rgb(116, 44, 44);
+}
+
+.Lady {
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(236, 208, 208);
+  text-shadow: 2px 2px 5px black;
+}
+
+.Lady:hover .centered {
+  opacity: 1;
+}
+
+/* This is styling for the navbar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(236, 208, 208);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: #5c5a5a;
+}
+
+.navbar a {      /* Nav Links */
+  float: left;
+  display: block;
+  color: #5c5a5a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #5c5a5a;
+  color: rgb(116, 44, 44);
+}
+
+/* This is styling for the columns */
+.column-content {
+  display: block;
+  background-color: #5c5a5a;
+  color: rgb(236, 208, 208);
+  padding: 15px;
+  height: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+
+/* This is styling for the p element */
+.paragraph {
+  text-align: center;
+  opacity: 0.5;
+  color: black;
+  transition: opacity 0.5s ease-in-out;
+  padding-top: 20px;
+}
+
+.paragraph:hover {
+  opacity: 1;
+  background-color: #333333;
+  color: rgb(116, 44, 44);
+  border: 2px rgb(236, 208, 208);
+  transform: scale(1.2);
+  text-shadow: 2px 2px 5px black;
+}
+
+/* this is the styling for the video player */
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+/*This is the styling for the stock footage */
+.stock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  position: relative;
+}
+
+/* this is for displaying text over the stock footage, I CAN"T FIGURE THIS OUT!! */
+.stock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}

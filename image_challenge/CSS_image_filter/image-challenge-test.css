@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Bloodborne;
+  src: url(./fonts/CinzelDecorative-Bold.ttf);
+}
+
+body {
+  font-family: Bloodborne, Arial, sans-serif;
+  background-color: #333333; /* dark grey background color */
+  text-shadow: black;
+}
+
+/* Style the header element */
+header {
+  background-color: #333333;
+  color: rgb(116, 44, 44);
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+
+footer {
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(116, 44, 44);
+  font-weight: bold;
+}
+
+/* Style the image */
+img.center {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 4px solid black;
+  border-radius: 15px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* This is the hover effect over the image */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-container:hover img.center {
+  transform: scale(1.2);
+}
+
+.image-container:hover .image-text {
+  opacity: 1;
+}
+
+/* Style for the table */
+table {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(107, 78, 78);
+  border: 2px solid;
+}
