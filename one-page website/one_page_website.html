@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>A Guide to Mechanical Keyboards</title>
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="./JS/one_page_website.js"></script>
 	</head>
 	<body>
 
@@ -37,9 +38,9 @@
 				<div>
 				
 					<!-- Photo Container 1 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_1.jpg" alt="HHKB" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="HHKB">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>This is a photo of the popular HHKB 60% Mechanical Keyboard</p>
@@ -49,9 +50,9 @@
 					<!-- END PHOTO CONTAINER 1 -->
 					
 					<!-- Photo Container 2 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_2.jpg" alt="Unikorn" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"  alt="Unikorn">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>The Unikorn is a very popular 60% MX Style Keyboard. It is made by Singa KBD.</p>
@@ -61,9 +62,9 @@
 					<!-- END PHOTO CONTAINER 2 -->
 					
 					<!-- Photo Container 3 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_3.jpg" alt="Portal" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"  alt="Portal">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>This is a photo of the Portal by Parallel Keyboards. This is one that I built myself.</p>
@@ -73,9 +74,9 @@
 					<!-- END PHOTO CONTAINER 3 -->
 					
 					<!-- Photo Container 4 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_4.jpg" alt="Haus" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"  alt="Haus">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>This is the Haus by Hand Engineering. A great Example of a 65% custom board. This one was also built by me.</p>
@@ -85,9 +86,9 @@
 					<!-- END PHOTO CONTAINER 4 -->
 					
 					<!-- Photo Container 5 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_5.jpg" alt="Matrix 3.0" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"  alt="Matrix 3.0">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>This is a TKL which stands for "Tenkeyless". It means that it does not have a numpad. Also known as an 85%.</p>
@@ -97,21 +98,21 @@
 					<!-- END PHOTO CONTAINER 5 -->
 					
 					<!-- Photo Container 6 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_6.jpg" alt="Typ60" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"  alt="Vero">
 							<div>
 								<h3>Click to Enlarge</h3>
-								<p>This is a custom 60% MX style board called the Typ60. it features the HHKB layout mimcking the popular HHKB topre board.</p>
+								<p>This is a custom 60% MX style board called the Vero. it features the HHKB layout mimcking the popular HHKB, topre board.</p>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 6 -->
 					
 					<!-- Photo Container 7 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_7.jpg" alt="Butt" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"  alt="Butt">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>The bottom of custom keyboards often features an internal weight the weighs the board down on the desk making it feel premium. This one is made of copper.</p>
@@ -121,9 +122,9 @@
 					<!-- END PHOTO CONTAINER 7 -->
 					
 					<!-- Photo Container 8 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_8.jpg" alt="Sonnet" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow"  alt="Sonnet">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>The Sonnet is a board that features a 75% layout and is one of the less common options amongst the custom community.</p>
@@ -133,9 +134,9 @@
 					<!-- END PHOTO CONTAINER 8 -->
 					
 					<!-- Photo Container 9 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_9.jpg" alt="Cosmo" width="500" height="300">
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumb_9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow"  alt="Cosmo">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>Some people like to adorn their custom keyboards with hand made custom Artisans. You've already seen a few in the provided photos. This Cosmonaut is made by Omniclectic.</p>
@@ -144,6 +145,103 @@
 					</div>
 					<!-- END PHOTO CONTAINER 9 -->
 					
+				</div>
+
+				<!--Modal/Lightbox-->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 9</div>
+							<img src="./Images/Thumb/thumb_1_large.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 9</div>
+							<img src="./Images/Thumb/thumb_2_large.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 9</div>
+							<img src="./Images/Thumb/thumb_3_large.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 9</div>
+							<img src="./Images/Thumb/thumb_4_large.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 9</div>
+							<img src="./Images/Thumb/thumb_5_large.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">6 / 9</div>
+							<img src="./Images/Thumb/thumb_6_large.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">7 / 9</div>
+							<img src="./Images/Thumb/thumb_7_large.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">8 / 9</div>
+							<img src="./Images/Thumb/thumb_8_large.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">9 / 9</div>
+							<img src="./Images/Thumb/thumb_9_large.jpg" style="width:100%">
+						</div>
+
+						<!--Next/Previous controls-->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="plus" onclick="plusSlides(1)">&#10095;</a>
+
+						<!--Captions-->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<!-- Thumbnail control -->
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_1.jpg" onclick="currentSlide(1)" alt="HHKB">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_2.jpg" onclick="currentSlide(2)" alt="Unikorn">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_3.jpg" onclick="currentSlide(3)" alt="Portal">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_4.jpg" onclick="currentSlide(4)" alt="Haus">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_5.jpg" onclick="currentSlide(5)" alt="Matrix">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_6.jpg" onclick="currentSlide(6)" alt="Vero">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_7.jpg" onclick="currentSlide(7)" alt="Butt">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_8.jpg" onclick="currentSlide(8)" alt="Sonnet">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumb_9.jpg" onclick="currentSlide(9)" alt="Cosmo">
+						</div>
 				</div>
 			</div>
 		</section>
